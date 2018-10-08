@@ -4,15 +4,17 @@ public class Usuario {
 	private String nombre;
 	private String apellido;
 	private String nombreDeUsuario;
+	private String fotoDePerfil;
 	
 	public Usuario() {
 		
 	}
 	
-	public Usuario(String nombre, String apellido, String nombreDeUsuario) {
+	public Usuario(String nombre, String apellido, String nombreDeUsuario, String fotoDePerfil) {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.nombreDeUsuario = nombreDeUsuario;
+		this.fotoDePerfil = fotoDePerfil;
 	}
 	
 	public String getNombre() {
@@ -37,5 +39,13 @@ public class Usuario {
 	
 	public void setNombreDeUsuario(String nombreDeUsuario) {
 		this.nombreDeUsuario = nombreDeUsuario;
+	}
+
+	public String getFotoDePerfil() {
+		return fotoDePerfil;
+	}
+
+	public void setFotoDePerfil(String fotoDePerfil) {
+		this.fotoDePerfil = fotoDePerfil;
 	}
 }

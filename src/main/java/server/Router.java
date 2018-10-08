@@ -21,13 +21,13 @@ public class Router {
 	
 	public static void init() {
 		Router.initEngine();
-		Spark.staticFiles.location("/public");
+		Spark.staticFileLocation("/public");
 		Router.configure();
 	}
 	
 	private static void configure(){
-		InicioController inicioController = new InicioController();
-		SaludoController saludoController = new SaludoController();
+		InicioController inicioController 	= new InicioController();
+		SaludoController saludoController 	= new SaludoController();
 		UsuarioController usuarioController = new UsuarioController();
 		
 		Spark.get("/", inicioController::inicio, Router.engine);
