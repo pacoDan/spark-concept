@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo</title>
+</head>
+<body>
+	<table>
+		<thead>
+			<th>Nombre</th>
+			<th>Apellido</th>
+			<th>Nombre de usuario</th>
+		</thead>
+		<tbody>
+			{{#each usuarios}}
+				<tr>
+					<td>{{nombre}}</td>
+					<td>{{apellido}}</td>
+					<td>{{nombreDeUsuario}}</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</body>
+</html>
